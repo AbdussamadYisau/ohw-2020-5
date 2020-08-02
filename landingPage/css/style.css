@@ -1,90 +1,6 @@
-:root {
-    --primary-color: rgb(255, 202, 19);
-}
-
-body {
-    background-color: rgb(253, 253, 253);
-    color: rgb(24, 24, 24);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-h2,
-h3 {
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--primary-color);
-}
-
-button {
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    outline: none;
-}
-
-
-header {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    padding: 1em 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-#header-div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 95%;
-}
-
-header figure {
-    align-items: center;
-}
-
-header nav {
-    
-    max-width: 220px;
-    width: 40%;
-    margin-right: 80px;
-}
-
-header ul {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-header img {
-    width: 24px;
-    height: 24px;
-}
-
-#hamburger {
-    cursor: pointer;
-    display: none;
-    height: 10px;
-    width: 20px;
-}
-
 
 .onlineCateringContainer {
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -120,11 +36,24 @@ header img {
 
 .onlineCateringDetails .onlineCateringButton {
 
-    background-color: #FFCA13;
+    background-color: #FFE074;
     border: none;
+    border-radius: 2px;
+    width: 100px;
+    height: 36px;
     text-decoration: none;
-    padding: 10px 22px;
     text-align: center;
+}
+
+.onlineCateringDetails .onlineCateringButton p {
+    width: 100%;
+    height: 16px;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #181818;
 }
 
 .onlineCateringDetails .onlineCateringLastParagraph {
@@ -133,25 +62,30 @@ header img {
     height: 42px;
     padding: 17px;
 
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     line-height: 21px;
 
     color: #181818;
 
-    background-color: #FFCA13;
+    background-color: #FFE074;
     
-
 
 }
 
 .onlineCateringIcons {
-    display: inline-block;
+    display: flex;
+    
 }
 
-.onlineCateringIcons img {
-    padding-right: 20px;
+.onlineCateringIcons .fa-instagram, .onlineCateringIcons .fa-twitter {
+    color: #FFC600;
+    width: 24px;
+    height: 31.6px;
+    margin-right: 10px;
 }
+
 .onlineCateringDetails {
     margin-left:96px ;
     padding: 50px;
@@ -163,9 +97,9 @@ header img {
 
 @media (max-width: 700px) { 
     .onlineCateringContainer {
+        margin-top: -20px;
         display: flex;
         flex-direction: column;
-        /* text-align: center; */
     }
     .onlineCateringDetails {
         margin-top: 80px;
@@ -182,15 +116,16 @@ header img {
         margin-right: auto;
         
     }
+
+    .onlineCateringDetails .onlineCateringLastParagraph {
+        width: 350px;
+    }
  }
 
 .tastyMealsHeader, .mostOrderedMenuHeader, .servicesWeProvideHeader, .whyChooseUsHeader, .formWrapperHeader {
     text-align: center;
 }
 
-.formWrapperHeader {
-    padding-top: 50px;
-}
 
 .tastyMeals {
     display: flex;
@@ -212,12 +147,19 @@ header img {
     .tastyMeals{
         display: flex;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .tastyMeals div .tastyMealsDetails {
+        width: 300px;
     }
 
     .tastyMeals img {
         display: block;
         margin-left: auto;
         margin-right: auto;
+
+        width: 300px;
     }
 }
 
@@ -230,8 +172,9 @@ header img {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    width: 232px;
+    width: 270px;
     height: 118px;
+    text-align: center;
     
 }
 
@@ -251,34 +194,55 @@ header img {
     
 }
 
+@media all and (max-width:700px) {
+    .mostOrderedMenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mostOrderedMenuCard {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 120px;
+        margin-bottom: 50px;
+        
+    }
+
+
+}
+
 .servicesWeProvideHeader {
-    margin-top: 180px;
+    margin-top: 200px;
     
 }
 
 .servicesWeProvide {
-    margin-left: 50px;
+    margin-left: 84px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-around;
 }
 .servicesWeProvide .servicesWeProvideImg {
+    margin-top: 40px;
     position: absolute;
     z-index: -1;
 }
 
 .servicesWeProvide .servicesWeProvideImg2 {
-    margin-left: 140px;
-    margin-top: 100px;
+    margin-left: 151px;
+    margin-top: 143px;
 }
 
 .servicesWeProvide div .servicesWeProvideParagraph {
     width: 340px;
     height: 192px;
+    /* margin-top: 82px; */
 
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 33px;
 }
 
 @media (max-width: 700px) {
@@ -287,10 +251,15 @@ header img {
         flex-direction: column;
     }
 
+    .servicesWeProvide img{
+        width: 250px;
+        height: 250px;
+    }
     .servicesWeProvideParagraph {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 .whyChooseUs {
@@ -317,6 +286,21 @@ header img {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+}
+
+@media (max-width: 700px) {
+    .whyChooseUs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whyChooseUs .whyChooseUsOne {
+        margin-bottom: 20px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .formWrapper {
@@ -361,45 +345,3 @@ header img {
   }
 
   
-  footer {
-    background-color: var(--primary-color);
-    padding: 1.5em 0;
-}
-
-#footer-div {
-    display: flex;
-    justify-content: space-between;
-    line-height: 2.5;
-    margin: 0 auto;
-    max-width: 900px;
-    text-align: center;
-    width: 90%;
-}
-
-footer nav {
-    width: 75%;
-}
-
-footer ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* fOOTER AND HEADER */
-@media (max-width: 700px) {
-    html {
-        font-size: 12px;
-    }
-
-
-    #hamburger {
-        display: block;
-    }
-
-
-    .hide {
-        display: none;
-    }
-
-}

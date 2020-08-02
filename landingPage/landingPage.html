@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/headerAndFooter.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    
     <title>Foodies First</title>
 </head>
 <body>
@@ -12,7 +17,7 @@
     <header>
         <div id="header-div" class="flex">
             <figure class="flex">
-                <img src="https://drive.google.com/uc?export=view&id=1zf8OsdXkcOdM3vccwCI4m8ub8i2_Glns" alt="Logo">
+                <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
                 <figcaption>Foodies First</figcaption>
             </figure>
             <nav class="hide">
@@ -20,42 +25,37 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
                 </ul>
             </nav>
-            <a class="hide" href="#" title="Order now"><img src="https://drive.google.com/uc?export=view&id=1PJjOIOw-xmCmQoKO9gD_wNauIQt3w72w" alt="Order"></a>
-            <a  href="tel:+234801234567">
-                <figure class="flex hide">
-                    <img style="display: inline;" src="https://drive.google.com/uc?export=view&id=1h5Z3ICtRKgayydn14EBStGaEHJAl5umE" alt="Call us">
-                    <figcaption style="display: inline;">+234801234567</figcaption>
-                </figure>
-            </a>
-            <img id="hamburger" src="https://drive.google.com/uc?export=view&id=1os-XVZj9O17KJ4BdoKrG4qAhKn6t7Kvh" alt="">
+            <a id="login" class="hide bold" href="../login/login.html">Login</a>
+            <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
         </div>
     </header>
 
-    <!-- <nav id="hamburger-section" class="bold">
+    <nav id="hamburger-section" class="bold">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#">Logout</a></li>
         </ul>
-    </nav> -->
-
+    </nav>
+    
     <section class="onlineCateringContainer">
         <div class="onlineCateringDetails">
             <h1 class="onlineCateringHeader">FOODIES FIRST</h1>
             <h2 class="onlineCateringSubHeader"><strong> An Online Delivery Catering Service</strong></h2>
 
             <p class="onlineCateringParagraph"> Foodies First is a catering service that provides home-made meals at affordable prices.</p>
-            <button class="onlineCateringButton">Order Now</button>
+            <button class="onlineCateringButton">
+                 <p>Order Now </p>
+            </button>
 
             <p class="onlineCateringLastParagraph"> Our Delivery services only Open from 10am - 4pm . Monday - Fridays</p>
             
             <div class="onlineCateringIcons">
-                <img src="./assets/instagramIcon.png" alt="instagram Icon">
-                <img src="./assets/twitterIcon.png" alt="twitter Icon">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
             </div>
 
         </div>
@@ -113,8 +113,8 @@
     <section class="servicesWeProvide">
 
         <div>
-            <img class="servicesWeProvideImg"  src="./assets/servicesWeProvide1.png" alt="services we provide">
-            <img class="servicesWeProvideImg2"  src="./assets/servicesWeProvide2.png" alt="services we provide">
+            <img class="servicesWeProvideImg"  src="./assets/servicesWeProvide1.png" alt="services we provide" width="340px" height="322px">
+            <img class="servicesWeProvideImg2"  src="./assets/servicesWeProvide2.png" alt="services we provide" width="370px" height="288px">
         </div>
 
         <div>
@@ -132,17 +132,17 @@
     <section class="whyChooseUs">
 
         <div class="whyChooseUsOne">
-            <img src="./assets/whyChooseUsOne.png" alt="why choose us?" width="64px" height="64px">
+            <img src="./assets/whyChooseUsOne.png" alt="why choose us?" width="64px" height="64px" >
             <p class="whyChooseUsOneParagraph">We are Reliable.</p>
         </div>
 
         <div class="whyChooseUsOne">
-            <img src="./assets/whyChooseUsTwo.png" alt="why choose us?" width="64px" height="64px"> 
+            <img src="./assets/whyChooseUsTwo.png" alt="why choose us?" width="64px" height="64px"  > 
             <p class="whyChooseUsOneParagraph"> We provide healthy Delicious meals.</p>
         </div>
 
         <div class="whyChooseUsOne">
-            <img src="./assets/whyChooseUsThree.png" alt="why choose us?" width="64px" height="64px">
+            <img src="./assets/whyChooseUsThree.png" alt="why choose us?" width="64px" height="64px" >
             <p class="whyChooseUsOneParagraph">Your satisfaction is important to us.</p>
         </div>
 
@@ -177,19 +177,19 @@
     </section>
 
     <footer>
-            <div id="footer-div" class="flex flex-column bold">
-                <p>@2020 OHW</p>
-                <nav class="nav-bar flex-column">
-                    <ul class="flex flex-column">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
+        <div id="footer-div" class="flex flex-column bold">
+            <p>@2020 OHW</p>
+            <nav class="nav-bar flex-column">
+                <ul class="flex flex-column">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 
 <script type="text/javascript" src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/a0d0d18070.js" crossorigin="anonymous"></script>
 </body>
 </html>
